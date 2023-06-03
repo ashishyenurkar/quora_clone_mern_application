@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-const uri = 'mongodb+srv://ashishyenurkar15:Ashish2000@cluster0.v6otvma.mongodb.net/quora-clone-mern'; // Replace with your MongoDB URI
+
+const uri = process.env.MONGODBURL; 
 module.exports.connect=()=>{
     mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {

@@ -14,7 +14,7 @@ function SidebarOptions() {
               <p>Business</p>
           </div>
           <div className='sidebarOption' >
-              <img src=".\src\assets\psychoimg.jfif" alt="" />
+              <img src="/src/assets/psychoimg.jfif" alt="" />
               <p>Psychology</p>
           </div>
           <div className='sidebarOption'>

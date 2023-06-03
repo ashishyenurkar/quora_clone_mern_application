@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "node ../backend/server.js && node proxy.js",
+    "build-and-start": "npm run build && npm run start"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
@@ -15,12 +17,18 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.1",
     "@mui/styled-engine-sc": "^5.12.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
+    "firebase": "^9.22.1",
     "html-react-parser": "^3.0.16",
+    "http-proxy-middleware": "^2.0.6",
     "javascript-time-ago": "^2.5.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-quill": "^2.0.0",
-    "react-responsive-modal": "^6.4.1"
+    "react-redux": "^8.0.7",
+    "react-responsive-modal": "^6.4.1",
+    "react-time-ago": "^7.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
